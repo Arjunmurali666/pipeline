@@ -2,6 +2,6 @@ FROM  httpd
 
 RUN apt install php* -y
 
-COPY ./index.html /usr/local/apache2/htdocs/
+RUN echo "sample jenkins work..!!! " > /usr/local/apache2/htdocs/index.html
 
 CMD ["httpd-foreground"]
